@@ -6,4 +6,4 @@ def inicio(request):
     return render(request, 'paginas.html')
 
 def nosotros(request):
-    return render(request,'nosotros.html')
+    return render(request, 'paginas/nosotros.html')
