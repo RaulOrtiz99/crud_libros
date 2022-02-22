@@ -3,4 +3,7 @@ from django.http import  HttpResponse
 # Create your views here.
 
 def inicio(request):
-    return HttpResponse("<h1> Bienvenido a esta libreria </h1>")
+    return render(request, 'paginas.html')
+
+def nostros(request):
+    return render(request,'nosotros.html')
