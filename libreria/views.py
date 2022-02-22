@@ -5,5 +5,5 @@ from django.http import  HttpResponse
 def inicio(request):
     return render(request, 'paginas.html')
 
-def nostros(request):
+def nosotros(request):
     return render(request,'nosotros.html')
