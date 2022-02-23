@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Libro
-
+from .forms import LibroForm
 
 # Create your views here.
 
@@ -20,7 +20,8 @@ def libros(request):  # con esta funcion devolvemos la lista de todos los libros
 
 
 def crear(request):  # esta funcion es para crear un libro
-    return render(request, 'libros/crear.html')
+    formulario = LibroForm(request.POST or None)
+    return render(request, 'libros/crear.html',{'formulario':formulario})
 
 
 def editar(request):
