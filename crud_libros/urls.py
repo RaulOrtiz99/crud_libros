@@ -22,4 +22,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('libreria.urls')), #estas son las urls de la libreria
 
-] +static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+] +static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT) # esto tiene que estar en las otras urls
