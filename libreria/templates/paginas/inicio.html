@@ -3,13 +3,14 @@
 {% block titulo %} Inicio {% endblock %}
 
 {% block contenido %}
+    <br>
     <div class="jumbotron">
   <h1 class="display-4">Aplicacion Crud de libros</h1>
   <p class="lead">Esta es una web hecha con Django que como funcion tiene las tipicas operaciones CRUD</p>
   <hr class="my-4">
   <p>CREA, LEE , ACTUALIZA Y ELIMINA LIBROS</p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Empezar</a>
+    <a class="btn btn-primary btn-lg" href="{% url 'libros' %}" role="button">Empezar a guardar libros</a>
   </p>
 </div>
 
